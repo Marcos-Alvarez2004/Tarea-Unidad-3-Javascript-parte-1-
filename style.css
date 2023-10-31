@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 16px;
+  opacity: .6;
+  color: #000;
+}
+
+li a:hover {
+  opacity: 1;
+}
+
+.activo {
+  opacity: 1;
+}
+
+li {
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+#caja {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
+  border-radius: 50%;
+  margin: 10% auto;
+  animation: colorRandom 5s ease infinite;
+  padding: .5rem 1rem;
+} 
+
+.texto {
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@keyframes colorRandom {
+  0% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
